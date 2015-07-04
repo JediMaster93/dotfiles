@@ -1,3 +1,13 @@
+"""VUNDLE STUFF
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()            " required
+"""VUNDLE END"""
+filetype plugin indent on   
 execute pathogen#infect()
 syntax enable
 set tabstop=4
