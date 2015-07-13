@@ -1,15 +1,7 @@
-"""VUNDLE STUFF
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-call vundle#end()            " required
-"""VUNDLE END"""
-filetype plugin indent on   
 execute pathogen#infect()
 syntax enable
+"fuzzy finder"
+set rtp+=~/.fzf
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -60,5 +52,7 @@ function! DoPrettyXML()
 endfunction
 command! PrettyXML call DoPrettyXML()
 
-
+"Search and replace selected text with ctrl r
+"
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
